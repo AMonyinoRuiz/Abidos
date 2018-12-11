@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AbidosDataSetMantenimientosPlanificados" targetNamespace="http://tempuri.org/AbidosDataSetMantenimientosPlanificados.xsd" xmlns:mstns="http://tempuri.org/AbidosDataSetMantenimientosPlanificados.xsd" xmlns="http://tempuri.org/AbidosDataSetMantenimientosPlanificados.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="AbidosConnectionString5" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AbidosConnectionString5 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Abidos.My.MySettings.GlobalReference.Default.AbidosConnectionString5" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="AbidosConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AbidosConnectionString2 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Abidos.My.MySettings.GlobalReference.Default.AbidosConnectionString2" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="C_Calendario_MantenimientosPlanificadosTableAdapter" GeneratorDataComponentClassName="C_Calendario_MantenimientosPlanificadosTableAdapter" Name="C_Calendario_MantenimientosPlanificados" UserDataComponentName="C_Calendario_MantenimientosPlanificadosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AbidosConnectionString5 (MySettings)" DbObjectName="Abidos.dbo.C_Calendario_MantenimientosPlanificados" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_Instalacion, DataInicio, DataFin, NumeroProductos, TodoElDia, descripcion
+FROM            C_Calendario_MantenimientosPlanificados</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DataInicio" DataSetColumn="DataInicio" />
+              <Mapping SourceColumn="DataFin" DataSetColumn="DataFin" />
+              <Mapping SourceColumn="NumeroProductos" DataSetColumn="NumeroProductos" />
+              <Mapping SourceColumn="TodoElDia" DataSetColumn="TodoElDia" />
+              <Mapping SourceColumn="descripcion" DataSetColumn="descripcion" />
+              <Mapping SourceColumn="ID_Instalacion" DataSetColumn="ID_Instalacion" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AbidosDataSetMantenimientosPlanificados" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AbidosDataSetMantenimientosPlanificados" msprop:Generator_UserDSName="AbidosDataSetMantenimientosPlanificados">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="C_Calendario_MantenimientosPlanificados" msprop:Generator_TableClassName="C_Calendario_MantenimientosPlanificadosDataTable" msprop:Generator_TableVarName="tableC_Calendario_MantenimientosPlanificados" msprop:Generator_TablePropName="C_Calendario_MantenimientosPlanificados" msprop:Generator_RowDeletingName="C_Calendario_MantenimientosPlanificadosRowDeleting" msprop:Generator_RowChangingName="C_Calendario_MantenimientosPlanificadosRowChanging" msprop:Generator_RowEvHandlerName="C_Calendario_MantenimientosPlanificadosRowChangeEventHandler" msprop:Generator_RowDeletedName="C_Calendario_MantenimientosPlanificadosRowDeleted" msprop:Generator_UserTableName="C_Calendario_MantenimientosPlanificados" msprop:Generator_RowChangedName="C_Calendario_MantenimientosPlanificadosRowChanged" msprop:Generator_RowEvArgName="C_Calendario_MantenimientosPlanificadosRowChangeEvent" msprop:Generator_RowClassName="C_Calendario_MantenimientosPlanificadosRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DataInicio" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDataInicio" msprop:Generator_ColumnPropNameInRow="DataInicio" msprop:Generator_ColumnPropNameInTable="DataInicioColumn" msprop:Generator_UserColumnName="DataInicio" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DataFin" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDataFin" msprop:Generator_ColumnPropNameInRow="DataFin" msprop:Generator_ColumnPropNameInTable="DataFinColumn" msprop:Generator_UserColumnName="DataFin" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NumeroProductos" msprop:Generator_ColumnVarNameInTable="columnNumeroProductos" msprop:Generator_ColumnPropNameInRow="NumeroProductos" msprop:Generator_ColumnPropNameInTable="NumeroProductosColumn" msprop:Generator_UserColumnName="NumeroProductos" type="xs:int" minOccurs="0" />
+              <xs:element name="TodoElDia" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTodoElDia" msprop:Generator_ColumnPropNameInRow="TodoElDia" msprop:Generator_ColumnPropNameInTable="TodoElDiaColumn" msprop:Generator_UserColumnName="TodoElDia" type="xs:int" minOccurs="0" />
+              <xs:element name="descripcion" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="48" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Instalacion" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnID_Instalacion" msprop:Generator_ColumnPropNameInRow="ID_Instalacion" msprop:Generator_ColumnPropNameInTable="ID_InstalacionColumn" msprop:Generator_UserColumnName="ID_Instalacion" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
