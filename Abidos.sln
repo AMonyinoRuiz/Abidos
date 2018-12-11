@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "M_Conexion", "..\..\Llibreries\M_Conexion\M_Conexion.vbproj", "{A8B854CA-7877-4E7F-BCBC-F8AE0383BB88}"
 EndProject
@@ -42,6 +42,11 @@ EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "M_Excel", "..\..\Llibreries\M_Excel\M_Excel.vbproj", "{C8D67631-6AEA-4414-B201-022906CD2330}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "M_SQL", "..\..\Llibreries\M_SQL\M_SQL.vbproj", "{C20F5311-6219-4C20-8480-A3A81099F2DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{43F9980D-AC68-4B52-A464-2EAFA911FD9E}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -229,6 +234,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C85F933-1C4D-4038-8113-E3EEB5B3DD91}
 	EndGlobalSection
 	GlobalSection(Performance) = preSolution
 		HasPerformanceSessions = true
